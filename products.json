@@ -1,17 +1,17 @@
 [
   {
     "number": "b01",
-    "name": "可頌",
-    "price": 30
+    "name": "巴黎風法國土司",
+    "price": 70
   },
   {
     "number": "b02",
-    "name": "甜甜圈",
-    "price": 20
+    "name": "皇家奶油可頌麵包",
+    "price": 40
   },
   {
     "number": "c01",
-    "name": "拿鐵",
-    "price": 45
+    "name": "健康營養全麥土司",
+    "price": 75
   }
 ]
