@@ -1,15 +1,17 @@
+[
   {
     "number": "b01",
     "name": "可頌",
-    "price": 30,
+    "price": 30
   },
   {
     "number": "b02",
     "name": "甜甜圈",
-    "price": 20,
+    "price": 20
   },
   {
     "number": "c01",
     "name": "拿鐵",
-    "price": 45,
+    "price": 45
   }
+]
