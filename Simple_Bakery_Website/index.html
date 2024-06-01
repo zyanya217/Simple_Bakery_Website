@@ -37,7 +37,7 @@
     <section class="shop">
     <img src="images/Shop.png" alt="烘培工坊大安店">
     <div class="info">  <!--輔助標籤<div>(區域):劃分或組織HDML元素-->
-    <h2>8月1日大安旗艦店隆重開張！</h2>
+    <h2>8月1日大安店隆重開張！</h2>
     <p>享受花園庭院的悠閒時光，內用座位區美食相伴，<br>
        即日起來店消費加 LINE 好友可獲精緻小點心，等您一同品味！</p>
     </div>
@@ -47,16 +47,64 @@
         <div>
             <img src="images/p1.png" alt="巴黎風法國土司">
             <h3>巴黎風法國土司</h3>
+            <div class="price" id="b01_price"></div>
+            <script>
+                // 使用 fetch 從指定 URL 獲取 JSON 資料
+                fetch("https://raw.githubusercontent.com/zyanya217/Simple_Bakery_Website/main/products.json")
+                  .then(response => response.json()) // 解析 JSON
+                  .then(products => {
+                    // 查找 number 為 b01 的產品
+                    const product = products.find(p => p.number === "b01");
+                    // 將價格顯示在網頁上
+                    document.getElementById('b01_price').innerText = `${product.price} 元`;
+                  })
+                  .catch(error => {
+                    console.error('取得資料時發生錯誤:', error);
+                    document.getElementById('b01_price').innerText = '取得b01資料時發生錯誤';
+                  });
+              </script>
             <p>外皮金黃酥脆，內質鬆軟<br>讓您體驗法式浪漫的味覺享受</p>
         </div>
         <div>
             <img src="images/p2.png" alt="皇家奶油可頌麵包">
             <h3>皇家奶油可頌麵包</h3>
+            <div class="price" id="b02_price"></div>
+            <script>
+                // 使用 fetch 從指定 URL 獲取 JSON 資料
+                fetch("https://raw.githubusercontent.com/zyanya217/Simple_Bakery_Website/main/products.json")
+                  .then(response => response.json()) // 解析 JSON
+                  .then(products => {
+                    // 查找 number 為 b02 的產品
+                    const product = products.find(p => p.number === "b02");
+                    // 將價格顯示在網頁上
+                    document.getElementById('b02_price').innerText = `${product.price} 元`;
+                  })
+                  .catch(error => {
+                    console.error('取得資料時發生錯誤:', error);
+                    document.getElementById('b02_price').innerText = '取得b02資料時發生錯誤';
+                  });
+              </script>
             <p>酥脆口感搭配奶油的濃郁香氣<br>品嘗簡單而純粹的美味</p>
         </div>
         <div>
             <img src="images/p3.png" alt="健康營養全麥土司">
             <h3>健康營養全麥土司</h3>
+            <div class="price" id="b03_price"></div>
+            <script>
+                // 使用 fetch 從指定 URL 獲取 JSON 資料
+                fetch("https://raw.githubusercontent.com/zyanya217/Simple_Bakery_Website/main/products.json")
+                  .then(response => response.json()) // 解析 JSON
+                  .then(products => {
+                    // 查找 number 為 b03 的產品
+                    const product = products.find(p => p.number === "b03");
+                    // 將價格顯示在網頁上
+                    document.getElementById('b03_price').innerText = `${product.price} 元`;
+                  })
+                  .catch(error => {
+                    console.error('取得資料時發生錯誤:', error);
+                    document.getElementById('b03_price').innerText = '取得b03資料時發生錯誤';
+                  });
+              </script>
             <p>全麥製成，口感柔韌紮實<br>天然養分健康首選</p>
         </div>
     </section>
