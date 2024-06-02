@@ -41,6 +41,7 @@ header a:hover { /* hover 懸停 */
     text-decoration: underline; /* 當游標在文字上方時，才出現文字底線 */ 
 }
 
+/* index.html頁面 */
 .news { /* section news的區塊 */ 
     background-color: antiquewhite;
     color:white;
@@ -55,7 +56,7 @@ header a:hover { /* hover 懸停 */
     justify-content: center;
 } 
 .news h2 {
-    font-size:60px;
+    font-size:50px;
     margin-top:60px;
 } 
 .news p {
@@ -138,8 +139,13 @@ header a:hover { /* hover 懸停 */
     flex-direction: column;
     align-items: center;
 }
+.newsletter h3 {
+    margin: 5px 0;
+    text-align:center
+}
 .newsletter p {
     margin-bottom: 20px;
+    text-align:center
 }
 .newsletter input, .newsletter button {
     background-color: transparent; /* 顏色:透明 */
@@ -175,6 +181,25 @@ footer {
 .menu {
     display:none;
 }
+/* Map */
+.map {
+    width: 100%;
+    height: 400px;
+    padding-top: 80px;  /* 為了不被header遮蓋到 */
+}
+/* Store Locations */
+.store h3 {
+    margin-bottom: 5px;
+}
+.store-locations {
+    background-color: #ede9db;
+    padding: 50px;
+    display: flex; /* 讓 store 元素左右排列 */
+    justify-content: space-between; /* 讓 store 元素之間平均分布 */
+}
+.store {
+    width: 48%; /* 調整 store 元素的寬度 */
+}
 
 /* 響應式設計語法:使網頁必須適應各種螢幕大小 */
 @media screen and (max-width: 768px) { 
@@ -188,6 +213,9 @@ footer {
     }
     .news h2 {
         font-size:40px;
+    }
+    .newsletter p{
+        font-size:13px;
     }
     .menu { /* 漢堡選單的展開要用到javascript監測用戶點擊動作*/
         display:block;
@@ -222,5 +250,13 @@ footer {
     }
     .product p {
         margin-bottom: 15px;
+    }
+    .store-locations {
+        flex-direction: column; /* 上下排列 */
+        align-items: center; /* 水平居中 */
+    }
+    .store {
+        width: 100%; /* 讓 store 元素佔滿寬度 */
+        margin-bottom: 30px; /* 加入底部間距 */
     }
 }
