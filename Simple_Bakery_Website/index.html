@@ -42,7 +42,22 @@
        即日起來店消費加 LINE 好友可獲精緻小點心，等您一同品味！</p>
     </div>
     </section>
-
+    
+    <script>
+      fetch("https://raw.githubusercontent.com/zyanya217/Simple_Bakery_Website/main/products.json")
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        for(let i = 0; i < data.length; i++){
+            let product = data[i];
+            console.log(product.name + ", " + product.price); // 將每個產品的名稱和價格印出來
+        }
+    })
+    .catch(function(error){
+        console.error('取得資料時發生錯誤:', error); // 處理錯誤
+    });
+    </script>
     <section class="product">
         <div>
             <img src="images/p1.png" alt="巴黎風法國土司">
