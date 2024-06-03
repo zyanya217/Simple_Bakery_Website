@@ -1,5 +1,7 @@
 # Simple_Bakery_Website 
 A simple official bakery website  
+# [Online DEMO](https://htmlpreview.github.io/?https://raw.githubusercontent.com/zyanya217/Simple_Bakery_Website/main/Simple_Bakery_Website/index.html)
+
 ### including pages: 
 - [x] latest news
 - [x] about us
